@@ -11,7 +11,7 @@
 function Airplane(name) {
   this.name = name;
   this.isFlying = false;
-}
+}``
 Airplane.prototype.takeOff = function () {
   this.isFlying = true;
 };
@@ -123,6 +123,7 @@ Baby.prototype.poop = function () {
 
 Baby.prototype.play = function () {
   return `Playing with ${this.favoriteToy}`;
+
 };
 
 Baby.prototype.toString = function () {
@@ -135,10 +136,10 @@ let johnnie = new Baby('Pola', 8, 'crocodile');
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. When dealing with a regular function - this keyword by default references the global object 
+  2. If you call a function using the new operator - this keyword will reference a new empty object
+  3. It is the object that is executing the current function
+  4. If it's not part of an object - it's referencing the windows object.
 */
 
 
